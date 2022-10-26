@@ -1,5 +1,5 @@
 import { parseUnits } from '@ethersproject/units'
-import { Currency, CurrencyAmount, ETHER, JSBI, Token, TokenAmount, Trade } from '@wakandaswap-libs/sdk'
+import { Currency, CurrencyAmount, ETHER, JSBI, Token, TokenAmount, Trade } from '@wizswap-libs/sdk'
 import { ParsedQs } from 'qs'
 import { useCallback, useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
@@ -92,8 +92,8 @@ const BAD_RECIPIENT_ADDRESSES: string[] = [
   '0x05fF2B0DB69458A0750badebc4f9e13aDd608C7F', // v2 router 02
   '0x10ed43c718714eb63d5aa57b78b54704e256024e', // v2-2 router 02
   '0xca143ce32fe78f1f7019d7d551a6402fc5350c73', // v2-2 factory
-  '0xb56633e44d36257A2F17292De2EEe5231A66C4cf', // wakanda factory
-  '0x832A621ebf4Ab926ed9b3a1C91E6ff13f5a2Df5c', // wakanda router
+  '0xb56633e44d36257A2F17292De2EEe5231A66C4cf', // wiz factory
+  '0x832A621ebf4Ab926ed9b3a1C91E6ff13f5a2Df5c', // wiz router
 ]
 
 /**

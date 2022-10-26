@@ -4785,39 +4785,6 @@
     "@uniswap/lib" "1.1.1"
     "@uniswap/v2-core" "1.0.0"
 
-"@wakandaswap-libs/sdk@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@wakandaswap-libs/sdk/-/sdk-1.0.1.tgz#988cbf0eea3266d7050ba1ec8f31891dcf8b83bb"
-  integrity sha512-DSK1aXTnO9A5i/icIumDrAq+yL+YIIKi3NduYmhGk6VXi3wW4WqZwT2jzle8Vy2o/dT/bgiUDSWziNzPp9Q5Hg==
-  dependencies:
-    "@wakandaswap-libs/wakanda-swap-core" "^0.1.0"
-    big.js "^5.2.2"
-    decimal.js-light "^2.5.0"
-    jsbi "^3.1.1"
-    tiny-invariant "^1.1.0"
-    tiny-warning "^1.0.3"
-    toformat "^2.0.0"
-
-"@wakandaswap-libs/uikit@^0.1.4":
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/@wakandaswap-libs/uikit/-/uikit-0.1.4.tgz#8881e114f9897a6369a5b53bac1a23b2e4242d02"
-  integrity sha512-CF9Zs0qbCZyE0HHXB2IWegI2NQjlW0VTN3woFqtKSGSQftqs0wgWno6rtvz06AGjgq7HafNxrhxDM1F5sbhZiA==
-  dependencies:
-    "@types/lodash" "^4.14.162"
-    "@types/styled-system" "^5.1.10"
-    lodash "^4.17.20"
-    react-transition-group "^4.4.1"
-    styled-system "^5.1.5"
-
-"@wakandaswap-libs/wakanda-swap-core@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@wakandaswap-libs/wakanda-swap-core/-/wakanda-swap-core-0.1.0.tgz#e0d3c04c8831071db7a8363d77d6dcdbc494e85d"
-  integrity sha512-XNfCVeq+7MEqz8y5LXxwJ3gVJszMOj1kBaoD203gxjzLwGudASwrsNsVT9LFOzx6LJiCTVSpm1nec//zfHmEAw==
-  dependencies:
-    truffle "^5.1.41"
-    truffle-flattener "^1.4.4"
-    truffle-hdwallet-provider "^1.0.17"
-
 "@walletconnect/browser-utils@^1.7.0":
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/@walletconnect/browser-utils/-/browser-utils-1.7.0.tgz#b420eb110d5ea4d7fe00084537fd720a72b68d56"
@@ -5319,6 +5286,39 @@
     "@webassemblyjs/ast" "1.9.0"
     "@webassemblyjs/wast-parser" "1.9.0"
     "@xtuc/long" "4.2.2"
+
+"@wizswap-libs/sdk@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@wizswap-libs/sdk/-/sdk-1.0.1.tgz#36a33034f8a2c34aafd33550005010cd8ef43d0c"
+  integrity sha512-RlDr12S/jWXkPuGEJYC2UgGTdRvDbtRSATP6wIIKRTsrBu+8dszBFXRC67UGwgAQIP1buRVSLOpPtIJBIeQ8VA==
+  dependencies:
+    "@wizswap-libs/wiz-swap-core" "^0.1.3"
+    big.js "^5.2.2"
+    decimal.js-light "^2.5.0"
+    jsbi "^3.1.1"
+    tiny-invariant "^1.1.0"
+    tiny-warning "^1.0.3"
+    toformat "^2.0.0"
+
+"@wizswap-libs/uikit@^0.1.7":
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/@wizswap-libs/uikit/-/uikit-0.1.7.tgz#79ad6ce440ddf562b62365ef33c82242805fe282"
+  integrity sha512-lbTMk+RIPox5pebh1k1M3VYrk2MGDALtE23Wp6mCAsQcJ22mKzAZf8vN7CQDSbDCFclIeNXr8fFRLmM0oK+GXw==
+  dependencies:
+    "@types/lodash" "^4.14.162"
+    "@types/styled-system" "^5.1.10"
+    lodash "^4.17.20"
+    react-transition-group "^4.4.1"
+    styled-system "^5.1.5"
+
+"@wizswap-libs/wiz-swap-core@^0.1.3":
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/@wizswap-libs/wiz-swap-core/-/wiz-swap-core-0.1.3.tgz#52842f6f2b3ef5deb01b0c21af39379a9ef349d9"
+  integrity sha512-6e4DJrBU8oya2HBf4HYLJaYnOKqy6yhzwgz0u0SREbwL0XQ/VnBF7c5X6zYT7iVHRXfRs0CNMHykGVmHXV5qyQ==
+  dependencies:
+    truffle "^5.1.41"
+    truffle-flattener "^1.4.4"
+    truffle-hdwallet-provider "^1.0.17"
 
 "@wry/context@^0.6.0":
   version "0.6.0"

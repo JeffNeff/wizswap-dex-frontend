@@ -1,10 +1,10 @@
-import { MenuEntry } from '@wakandaswap-libs/uikit'
+import { MenuEntry } from '@wizswap-libs/uikit'
 
 const config: MenuEntry[] = [
   {
     label: 'Home',
     icon: 'HomeIcon',
-    href: 'https://wakandaswap.finance',
+    href: 'https://wizswap.net',
   },
   {
     label: 'Trade',
@@ -30,16 +30,16 @@ const config: MenuEntry[] = [
   //   icon: 'PoolIcon',
   //   href: '/pools',
   // },
-  {
-    label: 'Lottery',
-    icon: 'TicketIcon',
-    href: 'https://wakandaswap.finance/lottery',
-  },
-  {
-    label: 'IWO',
-    icon: 'PoolIcon',
-    href: 'https://wakandaswap.finance/iwo',
-  },
+  // {
+  //   label: 'Lottery',
+  //   icon: 'TicketIcon',
+  //   href: 'https://wizswap.finance/lottery',
+  // },
+  // {
+  //   label: 'IWO',
+  //   icon: 'PoolIcon',
+  //   href: 'https://wizswap.finance/iwo',
+  // },
   // {
   //   label: 'NFT',
   //   icon: 'NftIcon',
@@ -50,20 +50,16 @@ const config: MenuEntry[] = [
     icon: 'InfoIcon',
     items: [
       {
-        label: 'WakandaSwap',
-        href: 'https://info.wakandaswap.finance/token/0x5344c20fd242545f31723689662ac12b9556fc3d',
+        label: 'WizSwap',
+        href: 'https://info.wizswap.finance/token/0xDa3fbBe2249E6C08b7b51e6bAd7A6Aa27219316e',
       },
       {
         label: 'CoinGecko',
-        href: 'https://www.coingecko.com/en/coins/wakanda-inu/',
+        href: 'https://www.coingecko.com/en/coins/wizswap/',
       },
       {
         label: 'CoinMarketCap',
-        href: 'https://coinmarketcap.com/currencies/wakanda-inu/',
-      },
-      {
-        label: 'AstroTools',
-        href: 'https://app.astrotools.io/pancake-pair-explorer/0x5344c20fd242545f31723689662ac12b9556fc3d',
+        href: 'https://coinmarketcap.com/currencies/wizswap/',
       },
     ],
   },
@@ -73,16 +69,16 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Github',
-        href: 'https://github.com/wakandaswap/',
+        href: 'https://github.com/wizswap/',
       },
       // {
       //   label: 'Docs',
-      //   href: 'https://goosedefi.gitbook.io/wakanda-inu//',
+      //   href: 'https://goosedefi.gitbook.io/wiz/',
       // },
-      {
-        label: 'Blog',
-        href: 'https://wakandainu.medium.com/',
-      },
+      // {
+      //   label: 'Blog',
+      //   href: 'https://wizswap.medium.com/',
+      // },
     ],
   },
   // {
@@ -91,11 +87,11 @@ const config: MenuEntry[] = [
   //   href:
   //     'https://google.com',
   // },
-  {
-    label: 'Audit by CertiK',
-    icon: 'ShieldIcon',
-    href: 'https://certik.org/projects/wakanda-inu/',
-  },
+  // {
+  //   label: 'Audit by CertiK',
+  //   icon: 'ShieldIcon',
+  //   href: 'https://certik.org/projects/wiz/',
+  // },
 ]
 
 export default config

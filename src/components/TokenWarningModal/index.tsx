@@ -1,13 +1,13 @@
-import { Token } from '@wakandaswap-libs/sdk'
+import { Token } from '@wizswap-libs/sdk'
 import { transparentize } from 'polished'
-import { Button, Text } from '@wakandaswap-libs/uikit'
+import { Button, Text } from '@wizswap-libs/uikit'
 import React, { useCallback, useMemo, useState } from 'react'
 import styled from 'styled-components'
 import { AlertTriangle } from 'react-feather'
 import { useActiveWeb3React } from '../../hooks'
 import { useAllTokens } from '../../hooks/Tokens'
 import { ExternalLink, TYPE } from '../Shared'
-import { getBscScanLink, shortenAddress } from '../../utils'
+import { getEthOScanLink, shortenAddress } from '../../utils'
 import CurrencyLogo from '../CurrencyLogo'
 import Modal from '../Modal'
 import { AutoRow, RowBetween } from '../Row'
@@ -75,8 +75,8 @@ function TokenWarningCard({ token }: TokenWarningCardProps) {
               : token.name || token.symbol}{' '}
           </Main>
           {chainId && (
-            <ExternalLink style={{ fontWeight: 400 }} href={getBscScanLink(chainId, token.address, 'token')}>
-              <Blue title={token.address}>{shortenAddress(token.address)} (View on BscScan)</Blue>
+            <ExternalLink style={{ fontWeight: 400 }} href={getEthOScanLink(chainId, token.address, 'token')}>
+              <Blue title={token.address}>{shortenAddress(token.address)} (View on EthOScan)</Blue>
             </ExternalLink>
           )}
         </AutoColumn>
@@ -107,7 +107,7 @@ export default function TokenWarningModal({
             <Text color="failure">Token imported</Text>
           </AutoRow>
           <Text>
-            Anyone can create an BEP20 token on BSC with <em>any</em> name, including creating fake versions of existing
+            Anyone can create an BEP20 token on ETHO with <em>any</em> name, including creating fake versions of existing
             tokens and tokens that claim to represent projects that do not have a token.
           </Text>
           <Text>

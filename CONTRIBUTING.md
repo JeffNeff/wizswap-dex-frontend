@@ -1,4 +1,4 @@
-# Contributing to the Wakanda ecosystem
+# Contributing to the Wiz ecosystem
 
 Thanks for taking the time to contribute !
 
@@ -13,9 +13,9 @@ yarn start
 
 Don't forget to setup your IDE with `eslint` and `prettier`.
 
-## Change BSC network
+## Change ETHO network
 
-To change the BSC network from test net, modify the `REACT_APP_CHAIN_ID` value in `.env`.
+To change the ETHO network from test net, modify the `REACT_APP_CHAIN_ID` value in `.env`.
 
 - MAIN NET `56`
 - TEST NET `97`

@@ -1,10 +1,10 @@
-import { ChainId } from '@wakandaswap-libs/sdk'
+import { ChainId } from '@wizswap-libs/sdk'
 import React, { useContext } from 'react'
 import { ThemeContext } from 'styled-components'
-import { Button, LinkExternal } from '@wakandaswap-libs/uikit'
+import { Button, LinkExternal } from '@wizswap-libs/uikit'
 import { ArrowUpCircle } from 'react-feather'
 import { AutoColumn } from '../Column'
-import { getBscScanLink } from '../../utils'
+import { getEthOScanLink } from '../../utils'
 import { Wrapper, Section, ConfirmedIcon, ContentHeader } from './helpers'
 
 type TransactionSubmittedContentProps = {
@@ -25,7 +25,7 @@ const TransactionSubmittedContent = ({ onDismiss, chainId, hash }: TransactionSu
         </ConfirmedIcon>
         <AutoColumn gap="8px" justify="center">
           {chainId && hash && (
-            <LinkExternal href={getBscScanLink(chainId, hash, 'transaction')}>View on BscScan</LinkExternal>
+            <LinkExternal href={getEthOScanLink(chainId, hash, 'transaction')}>View on EthOScan</LinkExternal>
           )}
           <Button onClick={onDismiss} mt="20px">
             Close

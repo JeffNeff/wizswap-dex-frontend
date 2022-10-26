@@ -3,8 +3,8 @@ import styled, { ThemeContext } from 'styled-components'
 import { splitSignature } from '@ethersproject/bytes'
 import { Contract } from '@ethersproject/contracts'
 import { TransactionResponse } from '@ethersproject/providers'
-import { Currency, currencyEquals, ETHER, Percent, WETH } from '@wakandaswap-libs/sdk'
-import { Button, Flex, Text } from '@wakandaswap-libs/uikit'
+import { Currency, currencyEquals, ETHER, Percent, WETH } from '@wizswap-libs/sdk'
+import { Button, Flex, Text } from '@wizswap-libs/uikit'
 import { ArrowDown, Plus } from 'react-feather'
 import { RouteComponentProps } from 'react-router'
 
@@ -123,7 +123,7 @@ export default function RemoveLiquidity({
       { name: 'verifyingContract', type: 'address' },
     ]
     const domain = {
-      name: 'WakandaSwap LPs',
+      name: 'WizSwap LPs',
       version: '1',
       chainId,
       verifyingContract: pair.liquidityToken.address,
@@ -542,7 +542,7 @@ export default function RemoveLiquidity({
                                 currencyB === ETHER ? WETH[chainId].address : currencyIdB
                               }`}
                             >
-                              Receive WBNB
+                              Receive WETH
                             </StyledInternalLink>
                           ) : oneCurrencyIsWETH ? (
                             <StyledInternalLink
@@ -550,7 +550,7 @@ export default function RemoveLiquidity({
                                 currencyA && currencyEquals(currencyA, WETH[chainId]) ? 'ETH' : currencyIdA
                               }/${currencyB && currencyEquals(currencyB, WETH[chainId]) ? 'ETH' : currencyIdB}`}
                             >
-                              Receive BNB
+                              Receive ETH
                             </StyledInternalLink>
                           ) : null}
                         </RowBetween>

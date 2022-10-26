@@ -1,0 +1,57 @@
+{
+  "name": "wizswap",
+  "timestamp": "2022",
+  "version": {
+    "major": 1,
+    "minor": 3,
+    "patch": 1
+  },
+  "tags": {},
+  "logoURI": "/images/coins/wizt.png",
+  "keywords": [
+    "wizswap",
+    "default"
+  ],
+  "tokens": [
+    {
+      "name": "WETH Token",
+      "symbol": "WETH",
+      "address": "0x5db6199605DA5155E65037D5B1bDCcB77a40FA38",
+      "chainId": 4949,
+      "decimals": 18,
+      "logoURI": "/images/coins/eth.png"
+    },
+    {
+      "name": "Wiz Token",
+      "symbol": "WIZT",
+      "address": "0xDa3fbBe2249E6C08b7b51e6bAd7A6Aa27219316e",
+      "chainId": 4949,
+      "decimals": 18,
+      "logoURI": "/images/coins/wizt.png"
+    },
+    {
+      "name": "USDC Token",
+      "symbol": "USDC",
+      "address": "0xe3bD66Ef6eb9C3866FC256fe10476308158D6bd9",
+      "chainId": 4949,
+      "decimals": 18,
+      "logoURI": "/images/coins/usdc.png"
+    },
+    {
+      "name": "USDT Token",
+      "symbol": "USDT",
+      "address": "0x6A1c0692cBfC61767F5973aB551c0D702d089b3d",
+      "chainId": 4949,
+      "decimals": 18,
+      "logoURI": "/images/coins/usdt.png"
+    },
+    {
+      "name": "Wrap BTC",
+      "symbol": "WBTC",
+      "address": "0x37aC9697f59caE680AcEf739fD13006B963c14BB",
+      "chainId": 4949,
+      "decimals": 18,
+      "logoURI": "/images/coins/wbtc.png"
+    }
+  ]
+}

@@ -4,7 +4,7 @@ import { AddressZero } from '@ethersproject/constants'
 import { JsonRpcSigner, Web3Provider } from '@ethersproject/providers'
 import { BigNumber } from '@ethersproject/bignumber'
 import { abi as IUniswapV2Router02ABI } from '@uniswap/v2-periphery/build/IUniswapV2Router02.json'
-import { ChainId, JSBI, Percent, Token, CurrencyAmount, Currency, ETHER } from '@wakandaswap-libs/sdk'
+import { ChainId, JSBI, Percent, Token, CurrencyAmount, Currency, ETHER } from '@wizswap-libs/sdk'
 import { ROUTER_ADDRESS } from '../constants'
 import { TokenAddressMap } from '../state/lists/hooks'
 
@@ -17,24 +17,24 @@ export function isAddress(value: any): string | false {
   }
 }
 
-const BSCSCAN_PREFIXES: { [chainId in ChainId]: string } = {
-  56: '',
+const ETHOSCAN_PREFIXES: { [chainId in ChainId]: string } = {
+  4949: 'explorer2.',
   97: 'testnet.'
 }
 
-export function getBscScanLink(chainId: ChainId, data: string, type: 'transaction' | 'token' | 'address'): string {
-  const prefix = `https://${BSCSCAN_PREFIXES[chainId] || BSCSCAN_PREFIXES[ChainId.MAINNET]}bscscan.com`
+export function getEthOScanLink(chainId: ChainId, data: string, type: 'transaction' | 'token' | 'address'): string {
+  const prefix = `https://${ETHOSCAN_PREFIXES[chainId] || ETHOSCAN_PREFIXES[ChainId.MAINNET]}etherone.one`
 
   switch (type) {
     case 'transaction': {
-      return `${prefix}/tx/${data}`
+      return `${prefix}/transactions/${data}`
     }
     case 'token': {
-      return `${prefix}/token/${data}`
+      return `${prefix}/contracts/${data}`
     }
     case 'address':
     default: {
-      return `${prefix}/address/${data}`
+      return `${prefix}/accounts/${data}`
     }
   }
 }

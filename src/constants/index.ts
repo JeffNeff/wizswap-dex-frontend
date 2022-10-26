@@ -1,6 +1,6 @@
-import { ChainId, JSBI, Percent, Token, WETH } from '@wakandaswap-libs/sdk'
+import { ChainId, JSBI, Percent, Token, WETH } from '@wizswap-libs/sdk'
 
-export const ROUTER_ADDRESS = '0x832A621ebf4Ab926ed9b3a1C91E6ff13f5a2Df5c'
+export const ROUTER_ADDRESS = '0x53e7DBFe2897a8aA0bF3aE91a56cf043B680c656'
 
 // a list of tokens by chain
 type ChainTokenList = {
@@ -8,8 +8,8 @@ type ChainTokenList = {
 }
 
 export const DAI = new Token(ChainId.MAINNET, '0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3', 18, 'DAI', 'Dai Stablecoin')
-export const BUSD = new Token(ChainId.MAINNET, '0xe9e7cea3dedca5984780bafc599bd69add087d56', 18, 'BUSD', 'Binance USD')
-export const USDT = new Token(ChainId.MAINNET, '0x55d398326f99059ff775485246999027b3197955', 18, 'USDT', 'Tether USD')
+export const BUSD = new Token(ChainId.MAINNET, '0xe3bD66Ef6eb9C3866FC256fe10476308158D6bd9', 18, 'BUSD', 'Binance USD')
+export const USDT = new Token(ChainId.MAINNET, '0x6A1c0692cBfC61767F5973aB551c0D702d089b3d', 18, 'USDT', 'Tether USD')
 export const UST = new Token(
   ChainId.MAINNET,
   '0x23396cf899ca06c4472205fc903bdb4de249d6fc',
@@ -20,7 +20,7 @@ export const UST = new Token(
 
 const WETH_ONLY: ChainTokenList = {
   [ChainId.MAINNET]: [WETH[ChainId.MAINNET]],
-  [ChainId.BSCTESTNET]: [WETH[ChainId.BSCTESTNET]],
+  [ChainId.TESTNET]: [WETH[ChainId.TESTNET]],
 }
 
 // used to construct intermediary pairs for trading
@@ -52,8 +52,8 @@ export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
 export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } = {
   [ChainId.MAINNET]: [
     [
-      new Token(ChainId.MAINNET, '0x5344c20fd242545f31723689662ac12b9556fc3d', 9, 'WAKANDA', 'WakandaSwap Token'),
-      new Token(ChainId.MAINNET, '0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c', 18, 'WBNB', 'Wrapped BNB'),
+      new Token(ChainId.MAINNET, '0xDa3fbBe2249E6C08b7b51e6bAd7A6Aa27219316e', 18, 'WIZ', 'WizSwap Token'),
+      new Token(ChainId.MAINNET, '0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c', 18, 'WETH', 'Wrapped ETH'),
     ],
     [BUSD, USDT],
     [DAI, USDT],

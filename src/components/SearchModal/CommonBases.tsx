@@ -1,6 +1,6 @@
 import React from 'react'
-import { Text } from '@wakandaswap-libs/uikit'
-import { ChainId, Currency, currencyEquals, ETHER, Token } from '@wakandaswap-libs/sdk'
+import { Text } from '@wizswap-libs/uikit'
+import { ChainId, Currency, currencyEquals, ETHER, Token } from '@wizswap-libs/sdk'
 import styled from 'styled-components'
 
 import { SUGGESTED_BASES } from '../../constants'
@@ -50,7 +50,7 @@ export default function CommonBases({
           disable={selectedCurrency === ETHER}
         >
           <CurrencyLogo currency={ETHER} style={{ marginRight: 8 }} />
-          <Text>BNB</Text>
+          <Text>ETH</Text>
         </BaseWrapper>
         {(chainId ? SUGGESTED_BASES[chainId] : []).map((token: Token) => {
           const selected = selectedCurrency instanceof Token && selectedCurrency.address === token.address

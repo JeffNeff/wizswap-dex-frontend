@@ -1,6 +1,6 @@
-import { Currency, ETHER, JSBI, TokenAmount } from '@wakandaswap-libs/sdk'
+import { Currency, ETHER, JSBI, TokenAmount } from '@wizswap-libs/sdk'
 import React, { useCallback, useEffect, useState } from 'react'
-import { Button, ChevronDownIcon, AddIcon, CardBody, Text } from '@wakandaswap-libs/uikit'
+import { Button, ChevronDownIcon, AddIcon, CardBody, Text } from '@wizswap-libs/uikit'
 import CardNav from 'components/CardNav'
 import { LightCard } from 'components/Card'
 import { AutoColumn, ColumnCenter } from 'components/Column'
