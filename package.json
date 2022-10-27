@@ -32,7 +32,7 @@
     "@web3-react/portis-connector": "^6.0.9",
     "@web3-react/walletconnect-connector": "^6.2.8",
     "@web3-react/walletlink-connector": "^6.0.9",
-    "@wizswap-libs/sdk": "^1.0.1",
+    "@wizswap-libs/sdk": "^1.0.2",
     "@wizswap-libs/uikit": "^0.1.7",
     "ajv": "^6.12.3",
     "cids": "^1.0.0",
