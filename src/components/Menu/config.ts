@@ -115,20 +115,21 @@ export const socials: MenuEntry[] = [
   {
     label: "Twitter",
     icon: "TwitterIcon",
-    href: "https://twitter.com/wizswap",
+    href: "https://twitter.com/EtherOneChain",
   },
   {
     label: "Telegram",
     icon: "TelegramIcon",
-    items: [
-      {
-        label: "English",
-        href: "https://t.me/ether_one_blockchain",
-      },
+    href: "https://t.me/ether_one_blockchain",
+    // items: [
+    //   {
+    //     label: "English",
+    //     href: "https://t.me/ether_one_blockchain",
+    //   },
       // {
       //   label: "Announcements",
       //   href: "https://t.me/WizSwapAnn",
       // },
-    ],
+    // ],
   },
 ];
