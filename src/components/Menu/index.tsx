@@ -7,7 +7,7 @@ import useTheme from 'hooks/useTheme'
 import useGetPriceData from 'hooks/useGetPriceData'
 // import useGetLocalProfile from 'hooks/useGetLocalProfile'
 import { injected, walletconnect } from 'connectors'
-import links from './config'
+import links, { socials } from './config'
 
 const Menu: React.FC = (props) => {
   const { account, activate, deactivate } = useWeb3React()
@@ -22,6 +22,7 @@ const Menu: React.FC = (props) => {
   return (
     <UikitMenu
       links={links}
+      socials={socials}
       account={account as string}
       login={(connectorId: ConnectorId) => {
         if (connectorId === 'walletconnect') {

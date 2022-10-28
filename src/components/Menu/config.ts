@@ -4,7 +4,7 @@ const config: MenuEntry[] = [
   {
     label: 'Home',
     icon: 'HomeIcon',
-    href: 'https://wizswap.net',
+    href: '/',
   },
   {
     label: 'Trade',
@@ -45,42 +45,42 @@ const config: MenuEntry[] = [
   //   icon: 'NftIcon',
   //   href: '/nft',
   // },
-  {
-    label: 'Info',
-    icon: 'InfoIcon',
-    items: [
-      {
-        label: 'WizSwap',
-        href: 'https://info.wizswap.finance/token/0xDa3fbBe2249E6C08b7b51e6bAd7A6Aa27219316e',
-      },
-      {
-        label: 'CoinGecko',
-        href: 'https://www.coingecko.com/en/coins/wizswap/',
-      },
-      {
-        label: 'CoinMarketCap',
-        href: 'https://coinmarketcap.com/currencies/wizswap/',
-      },
-    ],
-  },
-  {
-    label: 'More',
-    icon: 'MoreIcon',
-    items: [
-      {
-        label: 'Github',
-        href: 'https://github.com/wizswap/',
-      },
-      // {
-      //   label: 'Docs',
-      //   href: 'https://goosedefi.gitbook.io/wiz/',
-      // },
-      // {
-      //   label: 'Blog',
-      //   href: 'https://wizswap.medium.com/',
-      // },
-    ],
-  },
+  // {
+  //   label: 'Info',
+  //   icon: 'InfoIcon',
+  //   items: [
+  //     {
+  //       label: 'WizSwap',
+  //       href: 'https://info.wizswap.finance/token/0xDa3fbBe2249E6C08b7b51e6bAd7A6Aa27219316e',
+  //     },
+  //     {
+  //       label: 'CoinGecko',
+  //       href: 'https://www.coingecko.com/en/coins/wizswap/',
+  //     },
+  //     {
+  //       label: 'CoinMarketCap',
+  //       href: 'https://coinmarketcap.com/currencies/wizswap/',
+  //     },
+  //   ],
+  // },
+  // {
+  //   label: 'More',
+  //   icon: 'MoreIcon',
+  //   items: [
+  //     {
+  //       label: 'Github',
+  //       href: 'https://github.com/wizswap/',
+  //     },
+  //     // {
+  //     //   label: 'Docs',
+  //     //   href: 'https://goosedefi.gitbook.io/wiz/',
+  //     // },
+  //     // {
+  //     //   label: 'Blog',
+  //     //   href: 'https://wizswap.medium.com/',
+  //     // },
+  //   ],
+  // },
   // {
   //   label: 'Partnerships/IWO',
   //   icon: 'IfoIcon',
@@ -95,3 +95,40 @@ const config: MenuEntry[] = [
 ]
 
 export default config
+
+export const socials: MenuEntry[] = [
+  {
+    label: "Github",
+    icon: "GithubIcon",
+    href: "https://github.com/wizswap"
+  },
+  // {
+  //   label: "Docs",
+  //   icon: "GitbookIcon",
+  //   href: "https://docs.wizswap.finance",
+  // },
+  // {
+  //   label: "Medium",
+  //   icon: "MediumIcon",
+  //   href: "https://wizswap.medium.com",
+  // },
+  {
+    label: "Twitter",
+    icon: "TwitterIcon",
+    href: "https://twitter.com/wizswap",
+  },
+  {
+    label: "Telegram",
+    icon: "TelegramIcon",
+    items: [
+      {
+        label: "English",
+        href: "https://t.me/ether_one_blockchain",
+      },
+      // {
+      //   label: "Announcements",
+      //   href: "https://t.me/WizSwapAnn",
+      // },
+    ],
+  },
+];
