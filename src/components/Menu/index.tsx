@@ -15,7 +15,7 @@ const Menu: React.FC = (props) => {
   const { isDark, toggleTheme } = useTheme()
   const priceData = useGetPriceData()
 
-  const wizAddress = '0x5344C20FD242545F31723689662AC12b9556fC3d'
+  const wizAddress = '0xDa3fbBe2249E6C08b7b51e6bAd7A6Aa27219316e'
   const cakePriceUsd = priceData && priceData.data && priceData.data[wizAddress] ? Number(priceData.data[wizAddress].price) : Number(0)
   // const profile = useGetLocalProfile()
 
