@@ -7,16 +7,8 @@ type ChainTokenList = {
   readonly [chainId in ChainId]: Token[]
 }
 
-export const DAI = new Token(ChainId.MAINNET, '0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3', 18, 'DAI', 'Dai Stablecoin')
-export const BUSD = new Token(ChainId.MAINNET, '0xe3bD66Ef6eb9C3866FC256fe10476308158D6bd9', 18, 'BUSD', 'Binance USD')
+export const USDC = new Token(ChainId.MAINNET, '0xe3bD66Ef6eb9C3866FC256fe10476308158D6bd9', 18, 'USDC', 'Binance USD')
 export const USDT = new Token(ChainId.MAINNET, '0x6A1c0692cBfC61767F5973aB551c0D702d089b3d', 18, 'USDT', 'Tether USD')
-export const UST = new Token(
-  ChainId.MAINNET,
-  '0x23396cf899ca06c4472205fc903bdb4de249d6fc',
-  18,
-  'UST',
-  'Wrapped UST Token'
-)
 
 const WETH_ONLY: ChainTokenList = {
   [ChainId.MAINNET]: [WETH[ChainId.MAINNET]],
@@ -26,7 +18,7 @@ const WETH_ONLY: ChainTokenList = {
 // used to construct intermediary pairs for trading
 export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
   ...WETH_ONLY,
-  [ChainId.MAINNET]: [...WETH_ONLY[ChainId.MAINNET], DAI, BUSD, USDT, UST],
+  [ChainId.MAINNET]: [...WETH_ONLY[ChainId.MAINNET], USDC, USDT],
 }
 
 /**
@@ -40,13 +32,13 @@ export const CUSTOM_BASES: { [chainId in ChainId]?: { [tokenAddress: string]: To
 // used for display in the default list when adding liquidity
 export const SUGGESTED_BASES: ChainTokenList = {
   ...WETH_ONLY,
-  [ChainId.MAINNET]: [...WETH_ONLY[ChainId.MAINNET], DAI, BUSD, USDT],
+  [ChainId.MAINNET]: [...WETH_ONLY[ChainId.MAINNET], USDC, USDT],
 }
 
 // used to construct the list of all pairs we consider by default in the frontend
 export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
   ...WETH_ONLY,
-  [ChainId.MAINNET]: [...WETH_ONLY[ChainId.MAINNET], DAI, BUSD, USDT],
+  [ChainId.MAINNET]: [...WETH_ONLY[ChainId.MAINNET], USDC, USDT],
 }
 
 export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } = {
@@ -55,8 +47,7 @@ export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } 
       new Token(ChainId.MAINNET, '0x6EefAABDA2c1405eeE7020b6520B7e32d700A3bb', 18, 'WIZ', 'WizSwap Token'),
       new Token(ChainId.MAINNET, '0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c', 18, 'WETHONE', 'Wrapped Eth One'),
     ],
-    [BUSD, USDT],
-    [DAI, USDT],
+    [USDC, USDT]
   ],
 }
 
