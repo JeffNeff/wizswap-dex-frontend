@@ -51,7 +51,7 @@ const config: MenuEntry[] = [
   //   items: [
   //     {
   //       label: 'WizSwap',
-  //       href: 'https://info.wizswap.finance/token/0xDa3fbBe2249E6C08b7b51e6bAd7A6Aa27219316e',
+  //       href: 'https://info.wizswap.finance/token/0x6EefAABDA2c1405eeE7020b6520B7e32d700A3bb',
   //     },
   //     {
   //       label: 'CoinGecko',

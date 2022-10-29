@@ -29,7 +29,7 @@ If you are seeking to be added to the [Pancakeswap.finance](https://pancakeswap.
 {
 "name": "WizSwap Token",
 "symbol": "WIZ",
-"address": "0xDa3fbBe2249E6C08b7b51e6bAd7A6Aa27219316e",
+"address": "0x6EefAABDA2c1405eeE7020b6520B7e32d700A3bb",
 "chainId": 56,
 "decimals": 9,
 "logoURI": "/images/coins/WIZ.png"
