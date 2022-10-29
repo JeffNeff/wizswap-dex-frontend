@@ -50,7 +50,7 @@
       "symbol": "WBTC",
       "address": "0x37aC9697f59caE680AcEf739fD13006B963c14BB",
       "chainId": 4949,
-      "decimals": 18,
+      "decimals": 8,
       "logoURI": "/images/coins/wbtc.png"
     }
   ]
