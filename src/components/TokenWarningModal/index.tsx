@@ -7,7 +7,7 @@ import { AlertTriangle } from 'react-feather'
 import { useActiveWeb3React } from '../../hooks'
 import { useAllTokens } from '../../hooks/Tokens'
 import { ExternalLink, TYPE } from '../Shared'
-import { getEthOScanLink, shortenAddress } from '../../utils'
+import { getEthOneScanLink, shortenAddress } from '../../utils'
 import CurrencyLogo from '../CurrencyLogo'
 import Modal from '../Modal'
 import { AutoRow, RowBetween } from '../Row'
@@ -75,8 +75,8 @@ function TokenWarningCard({ token }: TokenWarningCardProps) {
               : token.name || token.symbol}{' '}
           </Main>
           {chainId && (
-            <ExternalLink style={{ fontWeight: 400 }} href={getEthOScanLink(chainId, token.address, 'token')}>
-              <Blue title={token.address}>{shortenAddress(token.address)} (View on EthOScan)</Blue>
+            <ExternalLink style={{ fontWeight: 400 }} href={getEthOneScanLink(chainId, token.address, 'token')}>
+              <Blue title={token.address}>{shortenAddress(token.address)} (View on EthOne Explorer)</Blue>
             </ExternalLink>
           )}
         </AutoColumn>

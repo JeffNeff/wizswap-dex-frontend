@@ -3,7 +3,7 @@ import { AddressZero } from '@ethersproject/constants'
 import { TokenAmount, Token, ChainId, Percent, JSBI } from '@wizswap-libs/sdk'
 
 import {
-  getEthOScanLink,
+  getEthOneScanLink,
   calculateSlippageAmount,
   isAddress,
   shortenAddress,
@@ -14,22 +14,22 @@ import {
 describe('utils', () => {
   describe('#getEtherscanLink', () => {
     it('correct for tx', () => {
-      expect(getEthOScanLink(1, 'abc', 'transaction')).toEqual('https://bscscan.com/tx/abc')
+      expect(getEthOneScanLink(1, 'abc', 'transaction')).toEqual('https://bscscan.com/tx/abc')
     })
     it('correct for token', () => {
-      expect(getEthOScanLink(1, 'abc', 'token')).toEqual('https://bscscan.com/token/abc')
+      expect(getEthOneScanLink(1, 'abc', 'token')).toEqual('https://bscscan.com/token/abc')
     })
     it('correct for address', () => {
-      expect(getEthOScanLink(1, 'abc', 'address')).toEqual('https://bscscan.com/address/abc')
+      expect(getEthOneScanLink(1, 'abc', 'address')).toEqual('https://bscscan.com/address/abc')
     })
     it('unrecognized chain id defaults to mainnet', () => {
-      expect(getEthOScanLink(2, 'abc', 'address')).toEqual('https://bscscan.com/address/abc')
+      expect(getEthOneScanLink(2, 'abc', 'address')).toEqual('https://bscscan.com/address/abc')
     })
     it('ropsten', () => {
-      expect(getEthOScanLink(3, 'abc', 'address')).toEqual('https://bscscan.com/address/abc')
+      expect(getEthOneScanLink(3, 'abc', 'address')).toEqual('https://bscscan.com/address/abc')
     })
     it('enum', () => {
-      expect(getEthOScanLink(ChainId.RINKEBY, 'abc', 'address')).toEqual('https://bscscan.com/address/abc')
+      expect(getEthOneScanLink(ChainId.RINKEBY, 'abc', 'address')).toEqual('https://bscscan.com/address/abc')
     })
   })
 

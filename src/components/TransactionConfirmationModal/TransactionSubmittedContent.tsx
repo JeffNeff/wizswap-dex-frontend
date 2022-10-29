@@ -4,7 +4,7 @@ import { ThemeContext } from 'styled-components'
 import { Button, LinkExternal } from '@wizswap-libs/uikit'
 import { ArrowUpCircle } from 'react-feather'
 import { AutoColumn } from '../Column'
-import { getEthOScanLink } from '../../utils'
+import { getEthOneScanLink } from '../../utils'
 import { Wrapper, Section, ConfirmedIcon, ContentHeader } from './helpers'
 
 type TransactionSubmittedContentProps = {
@@ -25,7 +25,7 @@ const TransactionSubmittedContent = ({ onDismiss, chainId, hash }: TransactionSu
         </ConfirmedIcon>
         <AutoColumn gap="8px" justify="center">
           {chainId && hash && (
-            <LinkExternal href={getEthOScanLink(chainId, hash, 'transaction')}>View on EthOScan</LinkExternal>
+            <LinkExternal href={getEthOneScanLink(chainId, hash, 'transaction')}>View on EthOne Explorer</LinkExternal>
           )}
           <Button onClick={onDismiss} mt="20px">
             Close

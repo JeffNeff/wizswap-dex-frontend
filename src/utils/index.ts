@@ -17,13 +17,13 @@ export function isAddress(value: any): string | false {
   }
 }
 
-const ETHOSCAN_PREFIXES: { [chainId in ChainId]: string } = {
+const ETHONESCAN_PREFIXES: { [chainId in ChainId]: string } = {
   4949: 'explorer2.',
   97: 'testnet.'
 }
 
-export function getEthOScanLink(chainId: ChainId, data: string, type: 'transaction' | 'token' | 'address'): string {
-  const prefix = `https://${ETHOSCAN_PREFIXES[chainId] || ETHOSCAN_PREFIXES[ChainId.MAINNET]}etherone.one`
+export function getEthOneScanLink(chainId: ChainId, data: string, type: 'transaction' | 'token' | 'address'): string {
+  const prefix = `https://${ETHONESCAN_PREFIXES[chainId] || ETHONESCAN_PREFIXES[ChainId.MAINNET]}etherone.one`
 
   switch (type) {
     case 'transaction': {

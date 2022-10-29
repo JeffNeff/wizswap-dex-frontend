@@ -5,7 +5,7 @@ import { useActiveWeb3React } from '../../hooks'
 import { ExternalLink, TYPE } from '../Shared'
 import { AutoColumn } from '../Column'
 import { RowBetween } from '../Row'
-import { getEthOScanLink } from '../../utils'
+import { getEthOneScanLink } from '../../utils'
 
 const { black: Black } = TYPE
 
@@ -105,8 +105,8 @@ export default function AddressInputPanel({
                 Recipient
               </Black>
               {address && chainId && (
-                <ExternalLink href={getEthOScanLink(chainId, name ?? address, 'address')} style={{ fontSize: '14px' }}>
-                  (View on EthOScan)
+                <ExternalLink href={getEthOneScanLink(chainId, name ?? address, 'address')} style={{ fontSize: '14px' }}>
+                  (View on EthOne Explorer)
                 </ExternalLink>
               )}
             </RowBetween>
