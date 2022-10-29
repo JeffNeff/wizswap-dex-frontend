@@ -8,7 +8,6 @@ import { AutoColumn } from '../Column'
 import QuestionHelper from '../QuestionHelper'
 import { RowBetween, RowFixed } from '../Row'
 import FormattedPriceImpact from './FormattedPriceImpact'
-import { SectionBreak } from './styleds'
 import SwapRoute from './SwapRoute'
 
 function TradeSummary({ trade, allowedSlippage }: { trade: Trade; allowedSlippage: number }) {
@@ -71,16 +70,15 @@ export function AdvancedSwapDetails({ trade }: AdvancedSwapDetailsProps) {
         <>
           <TradeSummary trade={trade} allowedSlippage={allowedSlippage} />
           {showRoute && (
-            <>
-              <SectionBreak style={{ margin: '0 8px', maxWidth: '100%', width: 'auto', marginTop: '16px' }} />
-              <AutoColumn style={{ padding: '0 8px' }}>
+            <Card>
+              <CardBody>
                 <RowFixed>
                   <Text fontSize="14px">Route</Text>
                   <QuestionHelper text="Routing through these tokens resulted in the best price for your trade." />
                 </RowFixed>
                 <SwapRoute trade={trade} />
-              </AutoColumn>
-            </>
+              </CardBody>
+            </Card>
           )}
         </>
       )}
