@@ -20,16 +20,16 @@ const config: MenuEntry[] = [
       },
     ],
   },
-  // {
-  //   label: 'Farms',
-  //   icon: 'FarmIcon',
-  //   href: '/farms',
-  // },
-  // {
-  //   label: 'Pools',
-  //   icon: 'PoolIcon',
-  //   href: '/pools',
-  // },
+  {
+    label: 'Farms',
+    icon: 'FarmIcon',
+    href: 'https://wizswapfarm.netlify.app/farms',
+  },
+  {
+    label: 'Pools',
+    icon: 'PoolIcon',
+    href: 'https://wizswapfarm.netlify.app/pools',
+  },
   // {
   //   label: 'Lottery',
   //   icon: 'TicketIcon',
