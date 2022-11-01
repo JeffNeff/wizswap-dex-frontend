@@ -21,14 +21,14 @@ const config: MenuEntry[] = [
     ],
   },
   {
-    label: 'Farms',
+    label: 'Farms (soon)',
     icon: 'FarmIcon',
-    href: 'https://wizswapfarm.netlify.app/farms',
+    href: '#',
   },
   {
-    label: 'Pools',
+    label: 'Pools (soon)',
     icon: 'PoolIcon',
-    href: 'https://wizswapfarm.netlify.app/pools',
+    href: '#',
   },
   // {
   //   label: 'Lottery',
