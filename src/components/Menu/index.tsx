@@ -1,23 +1,30 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { Menu as UikitMenu, ConnectorId } from '@wizswap-libs/uikit'
 import { useWeb3React } from '@web3-react/core'
 import { allLanguages } from 'constants/localisation/languageCodes'
 import { LanguageContext } from 'hooks/LanguageContext'
 import useTheme from 'hooks/useTheme'
-import useGetPriceData from 'hooks/useGetPriceData'
-// import useGetLocalProfile from 'hooks/useGetLocalProfile'
 import { injected, walletconnect } from 'connectors'
+import { usePairContract } from 'hooks/useContract'
 import links, { socials } from './config'
 
 const Menu: React.FC = (props) => {
   const { account, activate, deactivate } = useWeb3React()
   const { selectedLanguage, setSelectedLanguage } = useContext(LanguageContext)
   const { isDark, toggleTheme } = useTheme()
-  const priceData = useGetPriceData()
+  const [price, setPrice] = useState(0)
+  const usdcWizt = "0x03a01ad071984001c70d98d250a4f521f5649bf2";
+  const contract = usePairContract(usdcWizt)
 
-  const wizAddress = '0x6EefAABDA2c1405eeE7020b6520B7e32d700A3bb'
-  const cakePriceUsd = priceData && priceData.data && priceData.data[wizAddress] ? Number(priceData.data[wizAddress].price) : Number(0)
-  // const profile = useGetLocalProfile()
+  useEffect(() => {
+    (async () => {
+      const reserves = await contract?.getReserves()
+      if (reserves) {
+        const priceWizT = ((reserves.reserve1 / 10 ** 6) / (reserves.reserve0 / 10 ** 18))
+        setPrice(priceWizT)
+      }
+    })()
+  }, [contract])
 
   return (
     <UikitMenu
@@ -37,8 +44,8 @@ const Menu: React.FC = (props) => {
       currentLang={selectedLanguage?.code || ''}
       langs={allLanguages}
       setLang={setSelectedLanguage}
-      cakePriceUsd={cakePriceUsd}
-      cakePriceLink="https://www.coingecko.com/en/coins/wiz"
+      cakePriceUsd={price}
+      cakePriceLink="!#"
       /* profile={profile} */
       {...props}
     />
