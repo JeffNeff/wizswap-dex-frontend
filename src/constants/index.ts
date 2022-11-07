@@ -45,7 +45,7 @@ export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } 
   [ChainId.MAINNET]: [
     [
       new Token(ChainId.MAINNET, '0x6EefAABDA2c1405eeE7020b6520B7e32d700A3bb', 18, 'WIZ', 'WizSwap Token'),
-      new Token(ChainId.MAINNET, '0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c', 18, 'WETHONE', 'Wrapped Eth One'),
+      new Token(ChainId.MAINNET, '0x5db6199605DA5155E65037D5B1bDCcB77a40FA38', 18, 'WETHONE', 'Wrapped Eth One'),
     ],
     [USDC, USDT]
   ],

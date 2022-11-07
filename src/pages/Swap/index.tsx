@@ -478,7 +478,7 @@ const Swap = () => {
           </CardBody>
         </Wrapper>
       </AppBody>
-      <AdvancedSwapDetailsDropdown trade={trade} />
+      {!showWrap && <AdvancedSwapDetailsDropdown trade={trade} />}
     </>
   )
 }
