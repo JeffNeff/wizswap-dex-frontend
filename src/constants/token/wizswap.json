@@ -30,20 +30,12 @@
       "logoURI": "/images/coins/wizt.png"
     },
     {
-      "name": "Wizard USDC Token",
-      "symbol": "WIZUSDC",
-      "address": "0x386a6D6FD392aB312FB8898519AcE7EeE9970c51",
+      "name": "MO-Star",
+      "symbol": "MSTR",
+      "address": "0x50e979a8FBDAf9047A9A1103C2857963D02EdfE8",
       "chainId": 54321,
-      "decimals": 6,
-      "logoURI": "/images/coins/usdc.png"
-    },
-    {
-      "name": "Wizard USDT Token",
-      "symbol": "WIZUSDT",
-      "address": "0x5e11e7e953618d5d3C22CCe5aE4e79240b636756",
-      "chainId": 54321,
-      "decimals": 6,
-      "logoURI": "/images/coins/usdt.png"
+      "decimals": 1,
+      "logoURI": "/images/coins/MSTR.png"
     }
   ]
 }
