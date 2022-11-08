@@ -115,7 +115,7 @@ export const socials: MenuEntry[] = [
   {
     label: "Twitter",
     icon: "TwitterIcon",
-    href: "https://twitter.com/EtherOneChain",
+    href: "https://twitter.com/MineOnlium",
   },
   {
     label: "Telegram",

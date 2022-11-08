@@ -20,7 +20,7 @@ import { isTokenOnList } from '../../utils'
 const { main: Main } = TYPE
 
 function currencyKey(currency: Currency): string {
-  return currency instanceof Token ? currency.address : currency === ETHER ? 'ETHERONE' : ''
+  return currency instanceof Token ? currency.address : currency === ETHER ? 'ETHER' : ''
 }
 
 const StyledBalanceText = styled(Text)`
