@@ -50,6 +50,7 @@ const Menu: React.FC = (props) => {
       setLang={setSelectedLanguage}
       cakePriceUsd={price}
       cakePriceLink="!#"
+      removeNav
       /* profile={profile} */
       {...props}
     />
