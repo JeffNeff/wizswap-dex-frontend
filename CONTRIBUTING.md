@@ -13,9 +13,9 @@ yarn start
 
 Don't forget to setup your IDE with `eslint` and `prettier`.
 
-## Change ETHONE network
+## Change ETH network
 
-To change the ETHONE network from test net, modify the `REACT_APP_CHAIN_ID` value in `.env`.
+To change the ETH network from test net, modify the `REACT_APP_CHAIN_ID` value in `.env`.
 
 - MAIN NET `56`
 - TEST NET `97`

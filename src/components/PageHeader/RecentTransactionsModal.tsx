@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react'
 import { CheckmarkCircleIcon, ErrorIcon, Flex, LinkExternal, Text, Modal, Button } from '@wizswap-libs/uikit'
 import { useActiveWeb3React } from 'hooks'
-import { getEthOneScanLink } from 'utils'
+import { getEthScanLink } from 'utils'
 import { isTransactionRecent, useAllTransactions } from 'state/transactions/hooks'
 import { TransactionDetails } from 'state/transactions/reducer'
 import Loader from 'components/Loader'
@@ -70,7 +70,7 @@ const RecentTransactionsModal = ({ onDismiss = defaultOnDismiss }: RecentTransac
           return (
             <>
               <Flex key={hash} alignItems="center" justifyContent="space-between" mb="4px">
-                <LinkExternal href={getEthOneScanLink(chainId, hash, 'transaction')} color={color}>
+                <LinkExternal href={getEthScanLink(chainId, hash, 'transaction')} color={color}>
                   {summary ?? hash}
                 </LinkExternal>
                 {icon}

@@ -1,14 +1,14 @@
 import { ChainId, JSBI, Percent, Token, WETH } from '@wizswap-libs/sdk'
 
-export const ROUTER_ADDRESS = '0x53e7DBFe2897a8aA0bF3aE91a56cf043B680c656'
+export const ROUTER_ADDRESS = '0xAaFadf823189a90dA8Fe7a66BCCFAb93bC2C644E'
 
 // a list of tokens by chain
 type ChainTokenList = {
   readonly [chainId in ChainId]: Token[]
 }
 
-export const USDC = new Token(ChainId.MAINNET, '0xe3bD66Ef6eb9C3866FC256fe10476308158D6bd9', 18, 'USDC', 'Binance USD')
-export const USDT = new Token(ChainId.MAINNET, '0x6A1c0692cBfC61767F5973aB551c0D702d089b3d', 18, 'USDT', 'Tether USD')
+export const USDC = new Token(ChainId.MAINNET, '0x386a6D6FD392aB312FB8898519AcE7EeE9970c51', 6, 'WIZUSDC', 'Wizard USDC')
+export const USDT = new Token(ChainId.MAINNET, '0x5e11e7e953618d5d3C22CCe5aE4e79240b636756', 6, 'WIZUSDT', 'Wizard USDT')
 
 const WETH_ONLY: ChainTokenList = {
   [ChainId.MAINNET]: [WETH[ChainId.MAINNET]],
@@ -44,8 +44,8 @@ export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
 export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } = {
   [ChainId.MAINNET]: [
     [
-      new Token(ChainId.MAINNET, '0x6EefAABDA2c1405eeE7020b6520B7e32d700A3bb', 18, 'WIZ', 'WizSwap Token'),
-      new Token(ChainId.MAINNET, '0x5db6199605DA5155E65037D5B1bDCcB77a40FA38', 18, 'WETHONE', 'Wrapped Eth One'),
+      new Token(ChainId.MAINNET, '0x68b24D0AAfC2CdfF9f4379f4bc7252F827Abfe37', 18, 'WIZ', 'Wizard Token'),
+      new Token(ChainId.MAINNET, '0x92f946D70D999388f8fC17ACa81E9c5d925C89fC', 18, 'WETH', 'Wrapped Eth'),
     ],
     [USDC, USDT]
   ],

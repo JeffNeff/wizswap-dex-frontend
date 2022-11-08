@@ -3,7 +3,7 @@ import { AlertCircle, CheckCircle } from 'react-feather'
 import styled, { ThemeContext } from 'styled-components'
 import { useActiveWeb3React } from '../../hooks'
 import { TYPE, ExternalLink } from '../Shared'
-import { getEthOneScanLink } from '../../utils'
+import { getEthScanLink } from '../../utils'
 import { AutoColumn } from '../Column'
 import { AutoRow } from '../Row'
 
@@ -37,7 +37,7 @@ export default function TransactionPopup({
       </div>
       <AutoColumn gap="8px">
         <Body fontWeight={500}>{summary ?? `Hash: ${hash.slice(0, 8)}...${hash.slice(58, 65)}`}</Body>
-        {chainId && <ExternalLink href={getEthOneScanLink(chainId, hash, 'transaction')}>View on EthOne Explorer</ExternalLink>}
+        {chainId && <ExternalLink href={getEthScanLink(chainId, hash, 'transaction')}>View on MO Explorer</ExternalLink>}
       </AutoColumn>
     </RowNoFlex>
   )

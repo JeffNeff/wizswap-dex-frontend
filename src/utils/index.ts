@@ -17,24 +17,24 @@ export function isAddress(value: any): string | false {
   }
 }
 
-const ETHONESCAN_PREFIXES: { [chainId in ChainId]: string } = {
-  4949: 'explorer2.',
+const ETHSCAN_PREFIXES: { [chainId in ChainId]: string } = {
+  54321: 'mo-',
   97: 'testnet.'
 }
 
-export function getEthOneScanLink(chainId: ChainId, data: string, type: 'transaction' | 'token' | 'address'): string {
-  const prefix = `https://${ETHONESCAN_PREFIXES[chainId] || ETHONESCAN_PREFIXES[ChainId.MAINNET]}etherone.one`
+export function getEthScanLink(chainId: ChainId, data: string, type: 'transaction' | 'token' | 'address'): string {
+  const prefix = `https://${ETHSCAN_PREFIXES[chainId] || ETHSCAN_PREFIXES[ChainId.MAINNET]}scout.com`
 
   switch (type) {
     case 'transaction': {
-      return `${prefix}/transactions/${data}`
+      return `${prefix}/tx/${data}`
     }
     case 'token': {
-      return `${prefix}/contracts/${data}`
+      return `${prefix}/token/${data}`
     }
     case 'address':
     default: {
-      return `${prefix}/accounts/${data}`
+      return `${prefix}/address/${data}`
     }
   }
 }

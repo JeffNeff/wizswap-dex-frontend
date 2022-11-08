@@ -13,7 +13,7 @@ export class NoBscProviderError extends Error {
   public constructor() {
     super()
     this.name = this.constructor.name
-    this.message = 'No ETHONE provider was found on window.BinanceChain.'
+    this.message = 'No ETH provider was found on window.BinanceChain.'
   }
 }
 

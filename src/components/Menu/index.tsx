@@ -13,15 +13,19 @@ const Menu: React.FC = (props) => {
   const { selectedLanguage, setSelectedLanguage } = useContext(LanguageContext)
   const { isDark, toggleTheme } = useTheme()
   const [price, setPrice] = useState(0)
-  const usdcWizt = "0x03a01ad071984001c70d98d250a4f521f5649bf2";
+  const usdcWizt = "0x7aDc8786dDd0ea67fcd0B4e6f22cAd6e36eC9f06";
   const contract = usePairContract(usdcWizt)
 
   useEffect(() => {
     (async () => {
-      const reserves = await contract?.getReserves()
-      if (reserves) {
-        const priceWizT = ((reserves.reserve1 / 10 ** 6) / (reserves.reserve0 / 10 ** 18))
-        setPrice(priceWizT)
+      try {
+        const reserves = await contract?.getReserves()
+        if (reserves) {
+          const priceWizT = ((reserves.reserve0 / 10 ** 6) / (reserves.reserve1 / 10 ** 18))
+          setPrice(priceWizT)
+        }
+      } catch (error) {
+        // console.log('no liquidity for usdc/wizt');
       }
     })()
   }, [contract])

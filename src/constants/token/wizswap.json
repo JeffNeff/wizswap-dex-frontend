@@ -14,44 +14,36 @@
   ],
   "tokens": [
     {
-      "name": "Weth One",
-      "symbol": "WETHONE",
-      "address": "0x5db6199605DA5155E65037D5B1bDCcB77a40FA38",
-      "chainId": 4949,
+      "name": "Wrapped MO",
+      "symbol": "WMO",
+      "address": "0x92f946D70D999388f8fC17ACa81E9c5d925C89fC",
+      "chainId": 54321,
       "decimals": 18,
-      "logoURI": "/images/coins/wethone.png"
+      "logoURI": "/images/coins/weth.png"
     },
     {
       "name": "Wiz Token",
       "symbol": "WIZT",
-      "address": "0x6EefAABDA2c1405eeE7020b6520B7e32d700A3bb",
-      "chainId": 4949,
+      "address": "0x68b24D0AAfC2CdfF9f4379f4bc7252F827Abfe37",
+      "chainId": 54321,
       "decimals": 18,
       "logoURI": "/images/coins/wizt.png"
     },
     {
-      "name": "USDC Token",
-      "symbol": "USDC",
-      "address": "0xe3bD66Ef6eb9C3866FC256fe10476308158D6bd9",
-      "chainId": 4949,
+      "name": "Wizard USDC Token",
+      "symbol": "WIZUSDC",
+      "address": "0x386a6D6FD392aB312FB8898519AcE7EeE9970c51",
+      "chainId": 54321,
       "decimals": 6,
       "logoURI": "/images/coins/usdc.png"
     },
     {
-      "name": "USDT Token",
-      "symbol": "USDT",
-      "address": "0x6A1c0692cBfC61767F5973aB551c0D702d089b3d",
-      "chainId": 4949,
+      "name": "Wizard USDT Token",
+      "symbol": "WIZUSDT",
+      "address": "0x5e11e7e953618d5d3C22CCe5aE4e79240b636756",
+      "chainId": 54321,
       "decimals": 6,
       "logoURI": "/images/coins/usdt.png"
-    },
-    {
-      "name": "Wrapped BTC",
-      "symbol": "WBTC",
-      "address": "0x37aC9697f59caE680AcEf739fD13006B963c14BB",
-      "chainId": 4949,
-      "decimals": 8,
-      "logoURI": "/images/coins/wbtc.png"
     }
   ]
 }
