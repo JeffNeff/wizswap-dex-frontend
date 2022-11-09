@@ -4,7 +4,7 @@ const config: MenuEntry[] = [
   {
     label: 'Home',
     icon: 'HomeIcon',
-    href: 'https://wizswapfarm.netlify.app',
+    href: 'https://mo-wizswap.netlify.app/#/swap',
   },
   {
     label: 'Trade',
@@ -23,12 +23,12 @@ const config: MenuEntry[] = [
   {
     label: 'Farms',
     icon: 'FarmIcon',
-    href: 'https://wizswapfarm.netlify.app/farms',
+    href: 'https://mo-wizswap.netlify.app/#/swap/farms',
   },
   {
     label: 'Pools',
     icon: 'PoolIcon',
-    href: 'https://wizswapfarm.netlify.app/pools',
+    href: 'https://mo-wizswap.netlify.app/#/swap/pools',
   },
   // {
   //   label: 'Lottery',
@@ -117,10 +117,10 @@ export const socials: MenuEntry[] = [
     icon: "TwitterIcon",
     href: "https://twitter.com/MineOnlium",
   },
-  {
-    label: "Telegram",
-    icon: "TelegramIcon",
-    href: "https://t.me/ether_one_blockchain",
+  //{
+  //  label: "Telegram",
+  //  icon: "TelegramIcon",
+  //  href: "https://t.me/ether_one_blockchain",
     // items: [
     //   {
     //     label: "English",
@@ -131,5 +131,4 @@ export const socials: MenuEntry[] = [
       //   href: "https://t.me/WizSwapAnn",
       // },
     // ],
-  },
 ];
